@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4.4 Uy ishi </title>
+    <title>Function(method)  </title>
     <style>
         *{
             margin: 0;
@@ -13,35 +13,69 @@
 code{
     background-color: bisque;
     color: darkblue;
+    /* margin-bottom: 5px; */
     
 }
 p{
     margin-left: 10px;
+    font-weight: 500;
+    
+    line-height: 20px;
 }
 </style>
 </head>
 <body>
-    <h1>4.4 Uy ishi </h1><br>
-  <h2>Strind MEtodlari</h2><br>
-  <h3>MEtodlardi ohiriga doim qavis qoyiladi</h3> <br>
+  <h1>Strind Metodlari</h1><br>
+  <h3>Metodlardi ohiriga doim qavis qoyiladi</h3> <br>
 <p><code>String.toUpperCase()// STRING
 </code> <br>Hamma harifni kotta qilib beradi </p>
 <br>
 <p><code>String.toLowerCase()// string</code><br> Hamma harifalr kichkina bolib yoziladi</p><br>
-<p><code>String.indexof('i') // 3 </code> <br>element nechinci bolib turganini korsatadi (Noldan sanashidi boshlaydi)</p>
+<p><code>String.indexof('i') // 3 </code> <br>Element nechinci bolib turganini korsatadi (Noldan sanashidi boshlaydi)</p>
 <br>
-<p><code>String.lastindexof('i') // 3 </code> <br> element nechinci bolib turganini ohiridan korsatadi (Noldan sanashidi boshlaydi)</p><br>
+<p><code>String.lastindexof('i') // 3 </code> <br> Element nechinci bolib turganini ohiridan korsatadi (Noldan sanashidi boshlaydi)</p><br>
 <p><code>String.slice(0 , 4) //Stri </code> <br>Beerilgan oraligdagi belgiladi oladi , Bitta raqam yozsak Osha raqamdan keyingilarini oladi undan oldingi qismdi olmaydi</p> <br>
 <p><code>String.sabstr(2 , 2)// in </code> <br>
-    berilgan sondan necht elementi olishi aytamiz 
-
-</p><br>
+    Berilgan sondan necht elementi olishi aytamiz va bunda manfiy qiymat bersa ham boladi </p><br>
 <p>
     <code>String.replace ('t' , 'df') // Sdfring </code> <br>
-    bolib qoladi almashtirish bolyapti faqatgina birinchi kelgan harifni kegin keladigan 't'larni ozgartirmaydi
+    Bolib qoladi almashtirish bolyapti faqatgina birinchi kelgan harifni kegin keladigan 't'larni ozgartirmaydi
  </p><br>
  <p><code>String.chartAt()// S</code><br> Doim birinchi harifini oladi </p><br>
  <p><code>Sting.trim()// String</code><br> Boshidagi bosh joylarni olib tashlaydi</p>
+<br>
+<p><code>Hamidullo.replace('l' , 'y')//Hamiduylo </code> <br>Elementdagi so’ralgan elementni boshqasiga o’zgartiradi;<br><br>
+<code>Hamidullo.replaceAll( 'l' , 'y') // Hamiduyyo </code>  <br> Barchasini almashtiradi;</p><br>
+
+<p><code>'Hamidullo yaxshi bola'.startsWith('Hamid') // true</code> <br> Agar gapni boshida berilgan soz bolsa , unda bizga <code>true</code> qiymatini qaytaradi , agarda unday bolmasa <code>folse</code> qaytaradi</p>
+<br>
+<p><code>'Hamidullo yaxshi bola'.endWith('bola') // true</code> <br> Agar gapni ohirida berilgan soz bolsa , unda bizga <code>true</code> qiymatini qaytaradi , agarda unday bolmasa <code>folse</code> qaytaradi</p>
+<br>
+<p><code>'Hamidullo yaxshi bola'.includes('yaxshi') // true</code><br>Agar gapni ichida berilgan soz bolsa <code>true</code> qiymatini qaytaradi , agar yoq bolsa <code>folse</code> qiymatini qaytaradi</p><br>
+<p><code>HAmidullo.repeat(3) // HAmidulloHamidulloHamidullo</code><br>
+Berilgan sozni (gapni) atilgan marta qaytaradi</p><br>
+<p><code>Hamidullo.padStart(10 ,'7') // 7Hamidullo</code><br>
+    Berilgan string boshiga biror elementlarni aytilgan son miqdoricha qo’shadi. <br>Ya’ni bu method 2 ta parametr qabul qiladi. Birinchisi son, ikkinchi nima qo’shilishi kerakligi;</p><br>
+    <p><code>Hamidullo.padEnd(10 . '7') // Hamidullo7</code><br>
+        Berilgan string ohiriga biror elementlarni aytilgan son miqdoricha qo’shadi. <br> Ya’ni bu method 2 ta parametr qabul qiladi. Birinchisi son, ikkinchi nima qo’shilishi kerakligi;</p><br><br>
+
+        <h1>Math metodlari</h1><br>
+        <h2>Math obyekti, JavaScriptda matematik amallarni bajarish uchun foydalaniladi</h2><br>
+        <p>Eng kop ishlaydigan bu <code>Math.floor() // Math.ceil() // Math.round() // Math.trunc() // Math.random</code> keling shularni kotib chiqamiz</p>
+        <br>
+        <p><code>Math.floor(5.9) // 5</code><br>
+        Eng yaqin kichik sondi qayataradi . Endi savol agar <code>Math.floor(-5.9) </code> qaysi son qayatadi 
+    </p><br>
+    <p><code>Math.ceil(5.1) // 6</code> <br> Eng yaqin katta qiymatni qaytaradi . Savol osh osha agar <code>Math.ceil(-5.1)</code> qaysi son qayatadi</p><br>
+    <p><code>Math.round(5.4) // 5 </code><br> Matemaikad qanday bolsa shunday ishlaydi  </p> <br>
+    <p><code>Math.trunc(8.125)// 8</code> <br> Eng zo'rlaridan biri , nuqtadan keyingi hama sondi olib(chopadi) tashlaydi </p><br>
+    <p><code>Math.random()//0.132115665 </code> Tahminiy son beradi lekin 0 va 1 orasida shuni togirlash uchun biz <code>Math.trunc(100 * Math.random()) +1 </code> <br> shunda bizga buttun 1 dan 100 gacha bolgan sondi chiqarib beradi ( 100 bu chegara biz bu sondi ozimiz ozgartiramiz)</p> 
+
+    <br>
+    <p>Savolardi javobi <br>
+    <code>Math.floor(-5.9) // -6</code><br>
+<code>Math.ceil(-5.1) // -5</code></p>
+<p><br></p>
     <script src="./app.js"></script>
 </body>
 </html>

@@ -42,7 +42,7 @@ let emailSlice = email.slice( 2, 8 )
 console.log(emailSlice)
 
 
-let emailSubstr = email.substr(4 , 10)
+let emailSubstr = email.substr(4 , -5)
 console.log(emailSubstr)
 
 
