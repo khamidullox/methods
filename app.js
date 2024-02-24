@@ -57,3 +57,11 @@ let emailTrim = email.trim()
 
 console.log(emailTrim)
 
+// console.log(Math.max(Math.trunc(Math.random() * 700 + 1)))
+
+// let randomNamber = Math.trunc(Math.random()*100 + 1)
+// let myNmber = Number(prompt('Oz raqimigizni yozing'))  
+// let counter = 0
+
+
+
